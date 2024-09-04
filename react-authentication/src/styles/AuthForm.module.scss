@@ -1,0 +1,90 @@
+.authForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative; // Устанавливаем относительное позиционирование для родителя
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submitButton {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.submitButton:hover {
+  background: #005bb5;
+}
+
+.messageContainer {
+  position: relative;
+  height: 40px; // Зарезервированное место под сообщение
+  margin-bottom: 5px; // Отступ снизу, чтобы не накладывалось на следующий элемент
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.message.success {
+  background-color: #d4edda; // Светло-зеленый фон
+  color: #155724; // Темно-зеленый текст
+}
+
+.message.error {
+  background-color: #f8d7da; // Светло-красный фон
+  color: #721c24; // Темно-красный текст
+}
+
+.titleWrapper {
+  background-color: #0070f3; // Синеватый цвет для полосы
+  padding: 10px 0; // Вертикальные отступы для полосы
+  text-align: center; // Центрирование текста
+  border-radius: 4px; // Скругление углов полосы
+  margin-bottom: 10px; // Отступ снизу
+}
+
+.title {
+  color: #fff; // Белый цвет текста
+  font-size: 24px; // Размер шрифта
+  margin: 0; // Удаление отступов по умолчанию
+}
